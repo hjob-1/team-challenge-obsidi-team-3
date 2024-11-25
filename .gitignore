@@ -12,3 +12,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
+
+# Ignore build artifacts
+bin/
+*.class
+*.log

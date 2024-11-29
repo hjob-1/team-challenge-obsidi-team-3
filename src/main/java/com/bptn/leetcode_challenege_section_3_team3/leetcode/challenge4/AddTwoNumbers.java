@@ -13,10 +13,10 @@ public class AddTwoNumbers {
 			int sum = 0;
 			// if l1 ListNode is not null meaning it's have a value inside of it.
 			if (l1 != null)
-				sum += l1.val;
+				sum += l1.getValue();
 			// if l2 ListNode is not null meaning it's have a value inside of it.
 			if (l2 != null)
-				sum += l2.val;
+				sum += l2.getValue();
 			// add carry value element from the previous sum calculation
 			sum += carry;
 
@@ -25,17 +25,18 @@ public class AddTwoNumbers {
 			int remainder = sum % 10;
 			carry = sum / 10;
 			// create a new nodeList with the value of the remainder
-			current.next = new ListNode(remainder);
+			current.setNext(new ListNode(remainder));
+
 			// move the pointer
-			current = current.next;
+			current = current.getNext();
 
 			// Move to the next nodes
 			if (l1 != null)
-				l1 = l1.next;
+				l1 = l1.getNext();
 			if (l2 != null)
-				l2 = l2.next;
+				l2 = l2.getNext();
 		}
-		return newHead.next; // get the head of first node
+		return newHead.getNext(); // get the head of first node
 
 	}
 

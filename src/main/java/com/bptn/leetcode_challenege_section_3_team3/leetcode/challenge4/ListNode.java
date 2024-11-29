@@ -1,18 +1,30 @@
 package com.bptn.leetcode_challenege_section_3_team3.leetcode.challenge4;
 
 public class ListNode {
-	int val;
-	ListNode next;
+	private int val;
+	private ListNode next;
 
-	ListNode() {
+	public ListNode() {
 	}
 
-	ListNode(int val) {
+	public ListNode(int val) {
 		this.val = val;
 	}
 
-	ListNode(int val, ListNode next) {
+	public ListNode(int val, ListNode next) {
 		this.val = val;
+		this.next = next;
+	}
+
+	public int getValue() {
+		return val;
+	}
+
+	public ListNode getNext() {
+		return this.next;
+	}
+
+	public void setNext(ListNode next) {
 		this.next = next;
 	}
 

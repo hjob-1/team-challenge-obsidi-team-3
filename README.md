@@ -1,5 +1,6 @@
+# LeetCode Challenges
 
-# Project Title
+## Overview
 
 The following were a team effort of Leetcode challenges completed during bootcamp. The following project was built in a Maven Java application where we solved five different Leetcode questions which included:
 #### 1. Average Salary Excluding the Minimum and Maximum Salary
